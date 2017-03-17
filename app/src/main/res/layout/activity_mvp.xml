@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mvp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/id"
+        layout="@layout/title_bar"/>
+
+    <Button
+        android:id="@+id/but_mvp_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:layout_marginTop="16dp"
+        android:text="get info in github"
+        android:textAllCaps="false"/>
+
+    <ProgressBar
+        android:id="@+id/loading_mvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/but_mvp_get"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text_mvp_show"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but_mvp_get"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/but_mvp_get_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id"
+        android:layout_marginTop="16dp"
+        android:text="get data2"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/text_mvp_show"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mvp"/>
+</RelativeLayout>
